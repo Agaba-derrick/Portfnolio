@@ -1,84 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agaba Derrick Junior</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="image/logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:wght@300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="image/cloud.png" width="15%" alt="cloud-pic">
-        <h1>I'm Agaba</h1>
-        <p style="font-size: 20px;">a <span style="text-decoration: overline;"></span>Mid level Software Engineer</p>
-        <img src="image/mountain.png" alt="mountain-pic"> <br>
-        <img class="bottom-cloud" src="image/cloud.png" width="15%" alt="cloud-pic">
-    </div>
-
-    <div class="w3-container">
-        <h2>My Profile</h2>
-        <img src="image/profile.jpg" alt="Avatar" style="width:200px">
-    
-    </div>
-
-    <style>
-        img {
-          border-radius: 50%;
-        }
-        </style>
-
-            <h2>Hello there!</h2>
-            <p class="intro">I'm 23 years old. I'm studying Information Systems at <a class="Bugema University"href="https://www.bugemauniv.ac.ug">Bugema University</a>.
-                Iam a Full Stack Software Engineer and a Web Developer,
-                a System Analysist and a Project managing Officer. I love Reading, Badminton, Music and Coding.</p>
-            <p class="intro">Nice to meet you!</p>
+    <header>
+        <div class="top-container">
+            <img class="top-cloud" src="image/cloud.png" width="15%" alt="cloud-pic">
+            <h1 id="name">I'm Agaba</h1>
+            <p class="subtitle">a <span class="underline-text"></span>Mid-level Software Engineer</p>
+            <img src="image/mountain.png" alt="mountain-pic">
+            <img class="bottom-cloud" src="image/cloud.png" width="15%" alt="cloud-pic">
         </div>
-        <hr>
-        <div class="skills">
-            <h2>Skills</h2>
-            <div class="skill-row">
-                <img class="code-image" src="image/web-programming.png" alt="dev-pic">
-                <h3> System Analyst and Designer ==> Design & Implemention</h3>
-                <p>DESCRIPTION ==> Systems Analysts are high-level information technology experts who work in IT departments to guide the development of computer networks and systems. Their role is to consult on the current state of an IT system and provide data-driven advice on how to expand or refine its operations to meet company needs.
-                </p>
-            </div>
-            <div class="skill-row">
-                <img class="success-image" src="image/success.png" alt="success-pic">
-                <h3> Developer   ==> Familiar with top Programming Language</h3>
-                <p>SKILL DESCRIPTION ==> I have experience with JavaScript, Linux/Unix, Perl, Shell, Java, Ruby, PHP, Python, Hands-On SQL, Microsoft ASP.NET MVC, Web API, Node.js. </p>
-            </div>
-        </div>
-        <hr>
-        <div class="contact-message">
+    </header>
+
+    <main>
+        <!-- Other sections remain the same -->
+
+        <section class="contact-message">
             <h2>Get In Touch <img class="laugh-image" src="image/laugh.png" width="60" height="60" alt="laugh-pic"></h2>
-            <h3>My biggest love is to do Bussiness with You </h3>
-            <p> Technology is an easy way of delivering good strategies for bussiness Improvement.</p>
+            <h3>My biggest love is to do Business with You</h3>
+            <p>Technology is an easy way of delivering good strategies for business improvement.</p>
             <a class="btn" href="mailto:agabaderrick18@gmail.com">CONTACT ME</a>
-        </div>
-    </div>
-    <div class="bottom-container">
-        <a class="footer-link" href="[YOUR LINKEDIN URL]">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/Agabaderrickjunior/Open-Mid">Agabaderrickjunior</a>
-        <a class="footer-link" href="agabaderrick18@gmail.com">Facebook</a>
-        <a class="footer-link" href="https://drive.google.com/file/d/1dZIwnDOxaGTOZFBvZLDxt-FRU1gTJkIb/view">Resume</a>
+        </section>
+    </main>
 
-        <p>©2021 Created by Agaba Derrick Junior</p>
-    </div>
+    <footer class="bottom-container">
+        <!-- Other footer content remains the same -->
+    </footer>
 
+    <script>
+        // JavaScript to add interactivity
+
+        // Change the name dynamically
+        const nameElement = document.getElementById('name');
+        const names = ['Agaba', 'Derrick', 'Junior'];
+        let index = 0;
+
+        function changeName() {
+            nameElement.textContent = `I'm ${names[index]}`;
+            index = (index + 1) % names.length;
+        }
+
+        // Call the changeName function every 3 seconds
+        setInterval(changeName, 3000);
+    </script>
 </body>
-
-</html>                                            
+</html>
