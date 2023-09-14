@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- ... (head section remains the same) ... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agaba Derrick Junior</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="image/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="top-container">
-            <!-- ... (header content remains the same) ... -->
+            <img class="top-cloud" src="" width="15%" alt="cloud-pic">
+            <h1 id="name">I'm Agaba</h1>
+            <p class="subtitle">a <span class="underline-text"></span>Mid-level Software Engineer</p>
+            <img src="" alt="mountain-pic">
+            <img class="bottom-cloud" src="" width="15%" alt="cloud-pic">
         </div>
     </header>
 
@@ -51,7 +64,44 @@
 
     <script>
         // JavaScript to add interactivity
-        // ... (existing JavaScript code remains the same) ...
+
+        // Change the name dynamically
+        const nameElement = document.getElementById('name');
+        const names = ['Agaba', 'Derrick', 'Junior'];
+        let index = 0;
+
+        function changeName() {
+            nameElement.textContent = `I'm ${names[index]}`;
+            index = (index + 1) % names.length;
+        }
+
+        // Call the changeName function every 3 seconds
+        setInterval(changeName, 3000);
+
+        // Load images and links dynamically
+        const images = document.querySelectorAll('img');
+        const links = document.querySelectorAll('a');
+
+        // Define image and link sources
+        const imageSources = [
+            'image/cloud.png',
+            'image/mountain.png',
+            'image/cloud.png'
+        ];
+        const linkHrefs = [
+            'mailto:agabaderrick18@gmail.com',
+            '', // Add your second link here
+            ''  // Add your third link here
+        ];
+
+        // Update image and link sources
+        for (let i = 0; i < images.length; i++) {
+            images[i].src = imageSources[i];
+        }
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].href = linkHrefs[i];
+        }
     </script>
 </body>
 </html>
