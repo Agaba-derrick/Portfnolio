@@ -60,6 +60,12 @@
 
     <footer class="bottom-container">
         <!-- Other footer content remains the same -->
+        <div class="footer-links">
+            <a href="your-cv-link">CV</a>
+            <a href="your-portfolio-link">Portfolio</a>
+            <a href="your-linkedin-link">LinkedIn</a>
+            <a href="your-github-link">GitHub</a>
+        </div>
     </footer>
 
     <script>
@@ -102,6 +108,23 @@
         for (let i = 0; i < links.length; i++) {
             links[i].href = linkHrefs[i];
         }
+
+        // Update footer links
+        const footerLinks = document.querySelectorAll('.footer-links a');
+
+        // Define footer link hrefs
+        const footerLinkHrefs = [
+            'your-cv-link',
+            'your-portfolio-link',
+            'your-linkedin-link',
+            'your-github-link'
+        ];
+
+        // Update footer link hrefs
+        for (let i = 0; i < footerLinks.length; i++) {
+            footerLinks[i].href = footerLinkHrefs[i];
+        }
     </script>
 </body>
 </html>
+
