@@ -1,16 +1,26 @@
+/* General styles for body and text */
+
 body {
     color: #40514E;
     margin: 0;
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+
+
+/* Styles for the dynamic name in the header */
+
 h1 {
     color: #66BFBF;
     line-height: 2;
     font-size: 5.625rem;
-    font-family:'Sacramento', cursive;
+    font-family: 'Sacramento', cursive;
     margin: 50px auto 0 auto;
 }
+
+
+/* Styles for section headings */
+
 h2 {
     color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
@@ -18,84 +28,75 @@ h2 {
     font-weight: normal;
     padding-bottom: 10px;
 }
+
+
+/* Styles for other headings */
+
 h3 {
     color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+
+
+/* Set line height for paragraphs */
+
 p {
-    line-height: 2;
+    line-height: 1.6;
 }
+
+
+/* Horizontal rule style */
+
 hr {
     border: dotted #EAF6F6 6px;
     border-top: none;
     width: 6%;
     margin: 70px auto;
 }
+
+
+/* Styles for top container */
+
 .top-container {
-    background-color:  #EAF6F6;
+    background-color: #EAF6F6;
 }
 
-.middle-container {
-    margin: 100px 0;
+
+/* Styles for the contact message section */
+
+.contact-message {
+    width: 60%;
+    margin: 40px auto 60px;
 }
+
+
+/* Styles for footer */
 
 .bottom-container {
     background-color: #66BFBF;
     padding: 50px 0px 20px;
 }
 
-.bottom-cloud {
-    position: absolute;
-    bottom: 400px;
-    left: 280px;
-}
-.contact-message {
-    width: 40%;
-    margin: 40px auto 60px;
-}
-.intro {
-    width: 30%;
-    margin: auto;
-}
-.top-cloud {
-    position: relative;
-    left: 300px;
-    top: 40px;
-}
 
-a:hover {
-    color: darkcyan;
-}
-
-.skill-row{
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-}
-
-.code-image{
-    margin-right: 30px;
-    width: 25%;
-    float: left;
-}
-
-.success-image {
-    margin-left: 30px;
-    width: 25%;
-    float: right;
-}
+/* Styles for links */
 
 a {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 20px;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Smooth link color transition */
 }
 
-a:hover{
-    color: #EAF6F6;
+a:hover {
+    color: darkcyan;
 }
+
+
+/* Button styles */
+
 .btn {
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -112,9 +113,11 @@ a:hover{
     display: inline-block;
     cursor: pointer;
     text-align: center;
-  }
-  
-  .btn:hover {
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth button background color transition */
+}
+
+.btn:hover {
     border: solid #337FED 1px;
     background: #30E3CB;
     background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
@@ -126,14 +129,24 @@ a:hover{
     -moz-border-radius: 20px;
     border-radius: 20px;
     text-decoration: none;
-  }
-  
-  .copyright{
-      color: #EAF6F6;
-      font-size: 0.75em;
-      padding: 20px 0px 0px;
-  }
-  .uni {
+}
+
+
+/* Footer copyright text */
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75em;
+    padding: 20px 0px 0px;
+}
+
+
+/* Remove underlines from links in the footer */
+
+.uni {
     margin: 0px;
     text-decoration: none;
-  }
+}
+
+
+/* Additional styles specific to your project can be added as needed */
